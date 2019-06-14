@@ -2,11 +2,11 @@
   "name": "react-class-chat-api",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "scripts": {
     "postinstall": "tsc",
     "prestart": "tsc",
-    "start": "node dist/index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

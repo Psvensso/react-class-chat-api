@@ -13,7 +13,6 @@
         "es2017.string",
         "es2018.promise"
       ],
-      "outDir": "dist",
       "resolveJsonModule": true,
       "moduleResolution": "node",
       "jsx": "react",
