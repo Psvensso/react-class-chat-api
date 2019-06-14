@@ -1,6 +1,6 @@
 import { createServer } from "http";
 import * as socketio from "socket.io";
-
+const port = process.env.port || 1337;
 const server = createServer(httpHandler);
 const io = socketio(server, {
     perMessageDeflate: false
@@ -12,8 +12,8 @@ function httpHandler(_, res){
         res.end("\n");
 };
 
-server.listen(3009, () => {
-    console.log("listening on *:3009");
+server.listen(port, () => {
+    console.log(`listening on *:${port}`);
 });
 
 io.on("connection", (socket) => {
