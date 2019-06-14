@@ -1,0 +1,5 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/0fbc272b-f47f-4df6-adbb-177813ac25e5/resourceGroups/react-kurs/providers/Microsoft.Web/sites/chat-api",
+    "appService.deploySubpath": "",
+    "appService.showBuildDuringDeployPrompt": false
+}
