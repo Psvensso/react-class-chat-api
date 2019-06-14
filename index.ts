@@ -2,7 +2,9 @@ import { createServer } from "http";
 import * as socketio from "socket.io";
 
 const server = createServer(httpHandler);
-const io = socketio(server);
+const io = socketio(server, {
+    perMessageDeflate: false
+  });
 
 function httpHandler(_, res){
         res.writeHead(200, { "Content-Type": "text/plain" });
